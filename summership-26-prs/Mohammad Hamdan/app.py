@@ -41,7 +41,9 @@ total_money = QUANTITY * PRICE
 # BACKGROUND IMAGE
 # ============================================================
 
-image_path = Path("orchard_bg.jpg")
+# Use the folder where this Python file is located.
+# orchard_bg.jpg is in the same folder as app.py.
+image_path = Path(__file__).resolve().parent / "orchard_bg.jpg"
 
 if image_path.exists():
 
